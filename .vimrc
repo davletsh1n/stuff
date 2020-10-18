@@ -4,6 +4,7 @@ Plug 'morhetz/gruvbox'
 call plug#end()
 
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
 
 colorscheme gruvbox
 set background=dark
