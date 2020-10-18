@@ -1,11 +1,11 @@
-filetype off
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'morhetz/gruvbox'
+call plug#end()
 
-call pathogen#helptags()
-call pathogen#infect()
+map <C-n> :NERDTreeToggle<CR>
 
-filetype plugin indent on
-
-autocmd vimenter * colorscheme gruvbox
+colorscheme gruvbox
 set background=dark
 syntax on
 set number
